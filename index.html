@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.iconify.design/3/3.0.1/iconify.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Tarjeta personal</title>
+</head>
+<body>
+    <header class="header">
+        <input type="checkbox" id="header__open-menu">
+        <label for="header__open-menu"><span class="iconify icon-menu" data-icon="heroicons-solid:menu-alt-1" data-inline="false"></span></label>
+        <img class="logo-company" src="img/logo_TWKLOGISTICS_blanco.png" alt="Logo de la empresa">
+        <nav class="header__navbar">
+            <ul class="header__nav-list">
+                <li>
+                    <a class="header__nav-option option-1" href="#">
+                        <span class="nav-text">Codigo qr</span>
+                        <span class="iconify icon-link" data-icon="bx:qr" data-inline="false"></span>
+                    </a>
+                </li>
+                <li>
+                    <a class="header__nav-option" href="#">
+                        <span class="nav-text">Contactar</span>
+                        <span class="iconify icon-link" data-icon="bxs:contact"></span>
+                    </a>
+                </li>
+                <li>
+                    <a class="header__nav-option" href="https://xcamillo.github.io/TWKLOGISTICS/" target="_blank">
+                        <span class="nav-text">Web</span>
+                        <span class="iconify icon-link" data-icon="mingcute:web-fill"></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="mask-body"></div>
+    <div class="qr-modal">
+        <h3>Escanea o descarga el codigo qr</h3>
+        <img src="img/qrchimpX1024.png" alt="Codigo qr de la tarjeta">
+        <a href="img/qrchimpX1024.png" download="img/qrchimpX1024.png">Descargar</a>
+        <button class="btn-exit">x</button>
+    </div>
+    <main class="main">
+        <img class="image-person" src="img/imagen-trabajador-operario.jpg" alt="Foto del empleado">
+        <h1>Nombre Empleado</h1>
+        <h2>Cargo del empleado</h2>
+    </main>
+    <section class="last-contact">
+        <nav class="contact__nav">
+            <ul class="contact__list">
+                <li class="contact__item">Numero de contacto <a class="contact__link" href="tel:3101010100">3101010100</a></li>
+                <li class="contact__item">Correo <a class="contact__link" href="mailto:ejemplo@gmail.com">ejemplo@gmail.com</a></li>
+                <li class="contact__item">Sitio web <a class="contact__link" href="ejemploweb.com">ejemploweb.com</a></li>
+                <li class="contact__item">Dieccion <a class="contact__link" href="#">Cll 0 #00-0</a></li>
+            </ul>
+        </nav>
+    </section>
+    <footer class="footer">
+        <p>&copy;TWKLOGISTICS 2024</p>
+    </footer>
+    
+    <script src="code.js"></script>
+</body>
+</html>

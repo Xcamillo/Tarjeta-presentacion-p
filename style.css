@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: "Exo 2", sans-serif;
+    background-image: linear-gradient(#010f1c, #041525, #13304b, #346b9f);
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    padding: 10px 8px 0 8px;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(30px);
+}
+
+.header input[type="checkbox"]{
+    display: none;
+}
+
+.logo-company{
+    width: clamp(4rem, 32vw, 15rem);
+    margin-bottom: 20px;
+}
+
+.nav-text{
+    position: absolute;
+    right: 42px;
+    border: 1px solid #13304b;
+    padding: 5px;
+    border-radius: 7px;
+    transition: display 0.6s ease-in-out;
+    font-size: clamp(0.4rem, 4vw, 0.98rem);
+}
+
+.icon-menu{
+    color: #d5dae4;
+    font-size: 1.7rem;
+    position: absolute;
+    right: 0;
+    margin-right: 12px;
+    cursor: pointer;
+    z-index: 10;
+    transition: color 0.4s;
+}
+
+.header input[type="checkbox"]:checked ~ .header__navbar{
+    display: flex;
+}
+
+.header__navbar{
+    padding-top: 10px;
+    height: 18rem;
+    display: none;
+    width: 50%;
+    position: absolute;
+    right: 0;
+}
+
+.header__nav-list{
+    display: flex;
+    flex-direction: column;
+    margin: 70px auto;
+    gap: 52px;
+}
+
+.header__nav-option{
+    color: #ffffff;
+    transition: color 0.4s;
+}
+
+.header__nav-option:hover .icon-link{
+    color: #295c8c;
+}
+
+.header__nav-option:hover{
+    color: #295c8c;
+}
+
+.icon-link{
+    color: #c5daf3;
+    font-size: clamp(0.4rem, 5vw, 1.1rem);
+    position: absolute;
+    right: 14px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+}
+
+.image-person{
+    width: clamp(8rem, 48vw, 22rem);
+    border-radius: 50%;
+    margin: 20px;
+    box-shadow: 0 0 20px 3px #2b4761;
+}
+
+.main h1, h2{
+    color: #c5daf3;
+    margin: 20px;
+}
+
+.main h1{
+    font-size: clamp(0.7rem, 10vw, 1.7rem);
+}
+
+.main h2{
+    margin-top: 20px;
+    font-size: clamp(0.5rem, 10vw, 1.5rem);
+}
+
+.last-contact{
+    margin-bottom: 50px;
+}
+
+.contact__nav{
+    margin: 20px;
+}
+
+.contact__item{
+    color: #b1c1d0;
+    background-color: #0b1d2e;
+    font-weight: 500;
+    padding: 7px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    font-size: clamp(0.4rem, 5vw, 1.1rem);
+    width: clamp(5rem, 82vw, 34rem);
+}
+
+.contact__link{
+    color: #346b9f;
+    font-weight: 400;
+}
+
+.footer{
+    padding: 12px;
+}
+
+.footer p{
+    margin: 0 0 10px 20px;
+}
+
+.mask-body{
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+    position: absolute;
+    opacity: 0.8;
+    display: none;
+}
+
+.qr-modal{
+    width: clamp(10rem, 60vw, 26em);
+    padding: 20px;
+    background-color: #637b91;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50dvh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.qr-modal h3{
+    color: #061e36;
+    text-align: center;
+    text-wrap: pretty;
+}
+
+.qr-modal img{
+    width: clamp(8rem, 40vw, 17rem);
+    margin: 20px auto;
+}
+
+.qr-modal a{
+    color: #b1cae1;
+    background-color: #041525;
+    width: 6rem;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+    transition: color 0.8s, background-color 0.8s;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.qr-modal a:hover{
+    background-color: #102b44;
+    color: #6b8fb1;
+}
+
+.btn-exit{
+    background-color: #041525;
+    color: #b1c1d0;
+    border: none;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 4px 7px;
+    cursor: pointer;
+}
+
+.btn-exit:hover{
+    background-color: #102b44;
+    color: #6b8fb1;
+}
+
+@media screen and (min-width:840px){
+
+    .icon-menu{
+        display: none;
+    }
+
+    .nav-text{
+        position: relative;
+        border: none;
+        right: 46px;
+    }
+
+    .header__navbar{
+        display: flex;
+        border: none;
+    }
+
+    .header__nav-list{
+        flex-direction: row;
+        margin: 0;
+        gap: 70px;
+    }
+
+    .icon-link{
+        position: relative;
+        right: 50px;
+    }
+
+    .image-person{
+        margin: 20px auto;
+    }
+
+    .main h1, h2{
+        margin: auto;
+    }
+
+    .contact__nav{
+        margin: auto;
+    }
+
+    .contact__item{
+        margin: 20px auto;
+    }
+
+    .footer p{
+        text-align: center;
+    }
+
+}
