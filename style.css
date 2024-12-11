@@ -114,12 +114,12 @@ body{
 }
 
 .main h1{
-    font-size: clamp(0.7rem, 10vw, 1.7rem);
+    font-size: clamp(0.7rem, 10vw, 1.8rem);
 }
 
 .main h2{
     margin-top: 20px;
-    font-size: clamp(0.5rem, 10vw, 1.5rem);
+    font-size: clamp(0.5rem, 10vw, 1.4rem);
 }
 
 .last-contact{
